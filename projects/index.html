@@ -4,14 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <nav>
         <a href="../">Home</a>
-        <a href="../projects/">Projects</a>
+        <a href="../projects/" aria-current="page">Projects</a>
         <a href="../contact/">Contact</a>
+        <a href="../resume/">Resume</a>
         <a href="https://github.com/febyoon03" target="_blank">GitHub</a>
     </nav>
-    <h1>Projects</h1>
+    <main>
+        <h1>Projects</h1>
+
+        <section>
+            <h2>Space and Aerospace</h2>
+
+            <article>
+                <h3>Heterogeneous Data Fusion for Space Domain Awareness (SDA)</h3>
+                <p><time datetime="2026-05">May 2026</time></p>
+                <p>Excellence Award, 2026 Yonsei Aerospace Week Symposium</p>
+                <p>I built a toolkit that flags unusual satellite orbits from orbital data, checks whether flagged satellites are observable by optical telescopes, and supports adding a third data source: Earth observation imagery. After the symposium, I reviewed my code and found bugs that made the initial results unreliable. Rather than keeping those results, I rewrote the toolkit as a tested package with 15 passing tests and validated it on a small demo catalog of 58 objects.</p>
+                <a href="https://github.com/febyoon03/sda-heterogeneous-data-fusion" target="_blank">GitHub</a>
+            </article>
+
+            <article>
+                <h3>STARS: Satellite Tracking and Anomaly Response System</h3>
+                <p><time datetime="2026-03">Spring 2026</time></p>
+                <p>Individual project, open-source software course</p>
+                <p>I built a FastAPI service to store satellite orbit data and score anomalies, along with a Streamlit web app for visualizing orbits and flagging unusual ones. I containerized the API with Docker and deployed both components on AWS EC2.</p>
+                <p>
+                    <a href="https://github.com/febyoon03/sda-api" target="_blank">GitHub (API)</a> ·
+                    <a href="https://github.com/febyoon03/sda-viz" target="_blank">GitHub (web app)</a>
+                </p>
+            </article>
+
+            <article>
+                <h3>Drone Swarm Consensus Stability</h3>
+                <p><time datetime="2025-10">Fall 2025</time></p>
+                <p>Individual project</p>
+                <p>I used Monte Carlo simulations to study how ten drones reach consensus in the presence of noise. My initial theoretical formula differed from the simulation by about a factor of four. After investigating the discrepancy, I found that the formula was only valid for small step sizes. I corrected the formula, and the revised result matched the simulation within about 1%.</p>
+                <a href="https://github.com/febyoon03/drone-swarm-consensus-stability" target="_blank">GitHub</a>
+            </article>
+
+            <article>
+                <h3>Mars Terrain Hazard Detection</h3>
+                <p><time datetime="2025-08">Aug 2025</time></p>
+                <p>Excellence Award, robot vision course</p>
+                <p>I trained YOLOv8 models to detect bedrock, large rocks, sand and soil in Mars images. On a validation set from 322 images, a smaller model performed similarly to a larger one while running faster. However, it struggled to detect large rocks because only eight training images contained them.</p>
+                <a href="https://github.com/febyoon03/mars-terrain-hazard-detection" target="_blank">GitHub</a>
+            </article>
+        </section>
+
+        <section>
+            <h2>Software and Data</h2>
+
+            <article>
+                <h3>Job Posting Competency Matching</h3>
+                <p><time datetime="2026-05">Spring 2026</time></p>
+                <p>Team project of five, team leader and presenter</p>
+                <p>We built a system that matches job postings to skills, using 13,394 IT job postings. I checked the data quality, extracted skills, tried a transformer model, and built the demo. A simple TF-IDF + SVM model worked better than the two transformer models we tried, so we used it.</p>
+                <a href="https://github.com/febyoon03/job-posting-competency-matching" target="_blank">GitHub</a>
+            </article>
+
+            <article>
+                <h3>Coding Consulting Room Reservation System</h3>
+                <p><time datetime="2026-03">Spring 2026</time></p>
+                <p>Team project of four, team leader and presenter</p>
+                <p>We built a reservation system in Java for our school's coding consulting room and study room. It handles cases where two people book the same time. It was used in a real trial run at school.</p>
+                <a href="https://github.com/febyoon03/coding-consulting-room-reservation" target="_blank">GitHub</a>
+            </article>
+        </section>
+    </main>
 </body>
 </html>

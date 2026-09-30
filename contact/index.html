@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <nav>
         <a href="../">Home</a>
         <a href="../projects/">Projects</a>
-        <a href="../contact/">Contact</a>
+        <a href="../contact/" aria-current="page">Contact</a>
+        <a href="../resume/">Resume</a>
         <a href="https://github.com/febyoon03" target="_blank">GitHub</a>
     </nav>
-    <h1>Contact</h1>
-    <form action="mailto:yol110@ucsd.edu" method="POST" enctype="text/plain">
-        <label>
-            Email
-            <input name="email" type="email" value="test@example.com">
-        </label>
-        <label>
-            Subject
-            <input name="subject" value="Hello">
-        </label>
-        <label>
-            Message
-            <textarea name="body">Hi, this is a test message.</textarea>
-        </label>
-        <button>Send</button>
-    </form>
+    <main>
+        <h1>Contact</h1>
+        <form action="mailto:yol110@ucsd.edu" method="POST" enctype="text/plain">
+            <label>
+                Email
+                <input name="email" type="email" value="test@example.com">
+            </label>
+            <label>
+                Subject
+                <input name="subject" value="Hello">
+            </label>
+            <label>
+                Message
+                <textarea name="body">Hi, this is a test message.</textarea>
+            </label>
+            <button>Send</button>
+        </form>
+    </main>
 </body>
 </html>
