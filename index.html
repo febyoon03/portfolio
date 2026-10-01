@@ -1,71 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yoonkyong Lee: Personal site and portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoonkyong Lee</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <a href="./" aria-current="page">Home</a>
-        <a href="projects/">Projects</a>
-        <a href="contact/">Contact</a>
-        <a href="resume/">Resume</a>
-        <a href="https://github.com/febyoon03" target="_blank">GitHub</a>
-    </nav>
-    <main>
-        <section class="flip-card">
-            <div class="card-inner">
-                <div class="card-face card-front">
-                    <div class="holes" aria-hidden="true"><span></span><span class="slot"></span><span></span></div>
-                    <div class="paper">
-                        <img src="images/YoonkyongLeeProfile.jpeg" alt="Photo of Yoonkyong Lee">
-                        <dl class="id-fields">
-                            <div><dt>Name</dt><dd><h1>Yoonkyong Lee</h1></dd></div>
-                        </dl>
-                        <p class="id-quote">"I enjoy getting comfortable with large, messy datasets and figuring out what they have to say."</p>
-                    </div>
-                </div>
-
-                <div class="card-face card-back">
-                    <div class="holes" aria-hidden="true"><span></span><span class="slot"></span><span></span></div>
-                    <div class="paper">
-                        <section>
-                            <h2>Education</h2>
-                            <article>
-                                <div class="entry-head">
-                                    <h3>Kwangwoon University</h3>
-                                    <p><time datetime="2024-03">March 2024</time> – Present</p>
-                                </div>
-                                <p>B.S. in Information Convergence<br>(Data Science Track)</p>
-                            </article>
-                            <article>
-                                <div class="entry-head">
-                                    <h3>University of California, San Diego</h3>
-                                    <p><time datetime="2026-09">Fall 2026</time> – <time datetime="2027-06">Spring 2027</time></p>
-                                </div>
-                                <p>Exchange Student</p>
-                            </article>
-                        </section>
-                        <section>
-                            <h2>Contact</h2>
-                            <address>
-                                <a href="mailto:ynkynglee@gmail.com">ynkynglee@gmail.com</a>
-                                <a href="mailto:yol110@ucsd.edu">yol110@ucsd.edu</a>
-                            </address>
-                        </section>
-                    </div>
+<nav>
+<a href="./" aria-current="page">Home</a>
+<a href="projects/">Projects</a>
+<a href="resume/">Resume</a>
+<a href="contact/">Contact</a>
+<a href="https://github.com/febyoon03" target="_blank">GitHub</a>
+</nav>
+<main>
+    <div class="paper-wrap">
+        <div class="paper-card">
+            <div class="polaroid-row">
+                <div class="polaroid">
+                    <img src="images/YoonkyongLeeProfile.jpeg" alt="Photo of Yoonkyong Lee">
                 </div>
             </div>
 
-            <button type="button" class="flip-button">About me →</button>
-        </section>
-    </main>
+            <h1>Yoonkyong Lee</h1>
+            <p class="role-line">Data Science student interested in working with complex datasets and developing software solutions, primarily for satellite and rocket applications.</p>
+            <p class="intro-note">"I enjoy getting comfortable with large, messy datasets and figuring out what they have to say."</p>
+
+            <div class="intro-links">
+                <a href="resume/">Resume</a>
+                <a href="mailto:ynkynglee@gmail.com">Email</a>
+                <a href="https://github.com/febyoon03" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="building-label">Currently building</p>
+    <div class="chip-row">
+        <a class="chip" href="projects/#sda">Satellite data fusion (SDA)</a>
+        <a class="chip" href="projects/#stars">STARS tracking platform</a>
+        <a class="chip" href="projects/#mars">Mars terrain hazard detection</a>
+    </div>
+</main>
 </body>
 </html>
